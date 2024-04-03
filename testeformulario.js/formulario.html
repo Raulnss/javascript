@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var n1 = [];
+            var n2;
+            var f;
+            var n3 = [];
+            var n4 = [];
+            var resp=" "
+            $("#a").click(function() {
+                n2 = parseInt($("#a").val())
+                f = n2
+                let r=f%2
+                if (r==0) {
+                 n3.push(n2);
+                } else {
+                  n4.push(n2);
+                }
+                n1.push(n2.value);
+            })
+            $("#e").click(function() {
+                n1.forEach(function (item, indice, array) {
+                    resp=resp+" "+item
+                    $("div").text(item)
+            });
+// Maçã 0
+// Banana 1
+            })
+        })
+    </script>
+</head>
+<body>
+    <input type="number" id="a">
+    <button id="a">adicionar</button><br>
+    <button id="e">exibir</button>
+    <div></div>
+</body>
+</html>

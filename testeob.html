@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      var nada = {
+        function1 () {
+          let n1 = prompt("nome")
+          alert("bem vindo"+n1)
+        },
+      };
+       var tudo = {
+        function () {
+          let n2 = prompt("qual é a sua idade?")
+          if (n2>= 18 && n2<65) {
+            alert("você é adulto");
+          } else if (n2<=17) {
+            alert("jovem")
+          } else if (n2>= 65) {
+            alert("idoso")
+          }
+        }
+       }
+       let n3 = prompt("ecolha:  1                                                                                                                                                         ou                                                                                                                                                                2")
+       if (n3==1) {
+        nada.call(function1);
+       } else {
+        tudo.call();
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
